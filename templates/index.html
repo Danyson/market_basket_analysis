@@ -1,0 +1,24 @@
+{% extends "static.html" %}
+{% block body %}
+<form method='post' action="" enctype = "multipart/form-data" class="form-group w-50">
+<div class="center">
+	<div>
+		<p>Upload Dataset</p>
+	</div>
+	<div class="form-group">
+		<input type="file" class="form-control"  name="dataset">
+	</div>
+	<div>
+		<button type="submit" class="btn btn-primary my-4">Upload Dataset</button>
+	</div>
+	</div>
+</form>
+<style>
+.center {
+  margin: auto;
+  width: 80%;
+  border: 5px ;
+  padding: 100px;
+}
+</style>
+{% endblock %}

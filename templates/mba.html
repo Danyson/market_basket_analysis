@@ -1,0 +1,24 @@
+{% extends "static.html" %}
+{% block body %}
+<form method='post' action="" enctype = "multipart/form-data" class="form-group w-50">
+<div class="center">
+	<div>
+		<a href="/mba" type="button" class="btn btn-primary my-4" >RUN Market Basket Analysis</a>
+		<div class="result">{{result.result}}
+    </div>
+		<a href="/view_graph" type="button" class="btn btn-primary my-4" >View All Graphs</a>
+	</div>
+	</div>
+</form>
+<style>
+	.result{
+		color:green;
+	}
+.center {
+  margin: auto;
+  width: 80%;
+  border: 5px ;
+  padding: 100px;
+}
+</style>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "static.html" %}
+{% block body %}
+<div>
+
+<object data="{{ url_for('static', filename="graph/SupportvsConfidence.png") }}" width="600" height="360"></object>
+<object data="{{ url_for('static', filename="graph/SupportvsLift.png") }}" width="600" height="360"></object>
+<object data="{{ url_for('static', filename="graph/LiftvsConfidence.png") }}" width="600" height="360"></object>
+
+
+</div>
+{% endblock %}
